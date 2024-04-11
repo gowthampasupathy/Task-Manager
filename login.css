@@ -1,0 +1,59 @@
+
+
+.subdiv{
+    width: 500px;
+    height: auto;
+    background-color: red;
+    padding:15px;
+    border-radius: 15px; 
+    font-size: large;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    
+}
+.subdiv h2{
+    text-align: center;
+}
+input{
+    margin-left: 110px;
+    width: 270px;
+    height: 30px;
+    border-radius: 10px;
+}
+label{
+    margin-left: 115px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.maindiv{
+    width: 100vw;
+    height: 100vh;
+    
+    background: linear-gradient(45deg, transparent 49%, #000000 49% 51%, transparent 51%) , linear-gradient(-45deg, transparent 49%, #000000 49% 51%, transparent 51%);
+        background-size: 2em 2em;
+        background-color: #ffffff;
+        opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    overflow: hidden;
+  
+
+}
+.button{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 15px;
+   margin-top: 20px;
+   margin-left: 200px;
+
+}
+.button:hover{
+    color: black;
+    background-color: white;
+}
+
