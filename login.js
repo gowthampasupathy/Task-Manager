@@ -24,7 +24,7 @@ function logincheck(event){
   console.log(data[0].password+" "+pass)
     const validate=data.find((d)=>d.email==email && d.password==pass)
     if(validate){
-      window.location.href="index.html"
+      window.location.href="main.html"
     }else{
       alert("No User Exist")
     }

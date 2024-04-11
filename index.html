@@ -1,99 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task Management</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <div class="top-nav">
-      <h1>Task Management</h1>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>  
     <div class="maindiv">
-      <div class="div1">
-        <h1>Task Details</h1>
-        <div class="middle">
-          <h3>
-            Filter By Category :
-            <select id="select" class="select">
-              <option value="all">All</option>
-              <option value="work">Work</option>
-              <option value="personal">Personal</option>
-            </select>
-          </h3>
+        <div class="subdiv">
+            <h2>Login To Task Manager</h2>
+            <form onsubmit="logincheck(event)">
+                <label class="lb">Email</label><br>
+                <input type="email" id="email" required><br>
+                <label class="lb" >Password</label><br>
+                <input type="password" id="password" required><br>
+                <button class="button" type="submit">Login</button>
+                
+            </form>
+
         </div>
-        <div>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Category</th>
-                <th>Subcategory</th>
-                <th>Task</th>
-                <th>Duration</th>
-                <th>Operation</th>
-              </tr>
-            </thead>
-            <tbody id="body" class="body"></tbody>
-          </table>
-        </div>
-      </div>
-      <div class="div2">
-        <h1>Add New Task</h1>
-        <div class="addform">
-          <table class="table2">
-            <tr>
-              <td>Category</td>
-              <td>
-                <select id="cat" class="select">
-                  <option value="work">Work</option>
-                  <option value="personal">Personal</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td>Sub-Category</td>
-              <td>
-                <input type="text" class="in" id="subcat" />
-              </td>
-            </tr>
-            <tr>
-              <td>Task</td>
-              <td>
-                <input type="text" class="in" id="task" />
-              </td>
-            </tr>
-            <tr>
-              <td>Duration</td>
-              <td>
-                <h1 id="time">00:00:00</h1>
-                <div class="buttondiv">
-                  <button
-                    class="button"
-                    id="start"
-                    type="button"
-                    onclick="start()"
-                  >
-                    START
-                  </button>
-                  <button 
-                  class="button"
-                   onclick="reset()">
-                    RESET
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr >
-                <td colspan="2" class="tr2">
-                    <button class="button1" id="btn" onclick="submit()">Submit Task Details</button>
-                    <p id="id" style="display: none;"></p>
-                </td>
-            </tr>
-          </table>
-        </div>
-      </div>
     </div>
-    <script src="index.js"></script>
-  </body>
+    <script src="login.js"></script>
+</body>
 </html>
